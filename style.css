@@ -23,7 +23,7 @@ section::before
    position: absolute;
    width: 400px;
    height: 400px;
-   background: linear-gradient(#d429c3, #ff4331, #f49d5d); 
+   background: linear-gradient(#29cdf8, #37f877, #f4ff4a); 
    border-radius: 50%;
    transform: translate(-250px,-120px);
 }
@@ -33,7 +33,7 @@ section::after
    position: absolute;
    width: 350px;
    height: 350px;
-   background: linear-gradient(#29cdf8, #37f877, #f4ff4a); 
+   background: linear-gradient(#d429c3, #ff4331, #f49d5d); 
    border-radius: 50%;
    transform: translate(250px,150px);
 }
@@ -52,10 +52,65 @@ section::after
     padding: 20px;
     backdrop-filter: blur(25px);
 }
+.text-color
+{
+    text-align: center;
+    font-size: 40px;
+   
+    background-color: #FF0000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100%;
+    background-image: linear-gradient(
+        45deg,
+        #FF0000 33%,
+        #FF4500 33%,
+        #FF4500 40%,
+        #FFFF00 40%,
+        #FFFF00 47%,
+        #008000 47%,
+        #008000 54%,
+        #00BFFF 54%,
+        #00BFFF 61%,
+        #0000FF 61%,
+        #0000FF 68%,
+        #800080 68%);
+        animation: text-animate-rev 0.25s ease forwards;
+}
+.text-color:hover{
+    animation: text-animate 0.5s ease-in forwards;
+}
+
+@keyframes text-animate-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes text-animate {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
 .box h3 
 {
     color: #fff;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 .box .list 
 {
@@ -139,4 +194,5 @@ a
 {
     text-decoration: none;
 }
+
 
