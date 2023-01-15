@@ -1,0 +1,59 @@
+body 
+{
+     background-image: url(images/pedro.png); 
+}
+
+h3 
+{
+    margin: 0;
+}
+
+.box
+{
+    position: relative;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    z-index: 10;
+    padding: 20px;
+    backdrop-filter: blur(15px);
+}
+img 
+{
+    max-width: 350px;
+    border-radius: 20px; 
+    transition: 0.35s;
+}
+img:hover
+{
+    transform: scale(1.2);
+    box-shadow: 10px 5px 25px black;
+}
+.image
+{
+    display: flex;
+    justify-content: space-around;
+}
+.text
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 60px;
+    color: #4B0082;
+    text-shadow: 3px 5px 17px #5D76CB;
+    cursor: pointer;
+    margin: 30px;
+}
+.ig
+{
+    max-width: 80px;
+    border-radius: 50px; 
+    transition: 0.15s;
+}
